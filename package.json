@@ -1,0 +1,13 @@
+{
+  "name": "SpotifyRecents",
+  "version": "0.0.4",
+  "description": "Creates a playlist of recently added music for a Spotify user",
+  "main": "index.js",
+  "dependencies" : {
+    "express" : "4.15.0",
+  	"socket.io" : "1.7.2",
+    "spotify-web-api-node" : "2.3.6",
+    "moment" : "2.18.0",
+    "async" : "2.1.5"
+  }
+}
