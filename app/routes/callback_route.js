@@ -3,9 +3,10 @@ var spotifyCredentials = require('./../credentials/spotify_credentials');
 var spotifyApi = new SpotifyWebApi(spotifyCredentials);
 
 var cookieParser = require('cookie-parser');
-app.use(cookieParser());
 
 module.exports = function(express, app) {
+	app.use(cookieParser());
+	
 	app.get('/callback/', function(req, res) {
 		var code  = req.query.code; // Read the authorization code from the query parameters
 		// Get the access token! 
