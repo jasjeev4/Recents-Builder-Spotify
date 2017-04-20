@@ -2,7 +2,9 @@
   "name": "SpotifyRecents",
   "version": "0.0.4",
   "description": "Creates a playlist of recently added music for a Spotify user",
-  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies" : {
     "express" : "4.15.0",
     "cookie-parser" : "1.4.3",
