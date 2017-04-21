@@ -10,7 +10,7 @@ module.exports = function(express, app) {
 			res.sendFile( path.join( __dirname, '/../pages/frontpage', 'index.html' ));
 		}
 		else {
-			res.redirect('/build');
+			res.redirect('/create');
 		}
 	});
 };

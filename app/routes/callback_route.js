@@ -1,6 +1,10 @@
 var cookieParser = require('cookie-parser');
 
-module.exports = function(express, app, spotifyApi) {
+var SpotifyWebApi = require('spotify-web-api-node');
+var spotifyCredentials = require('./../credentials/spotify_credentials');
+var spotifyApi = new SpotifyWebApi(spotifyCredentials);
+
+module.exports = function(express, app) {
 	app.use(cookieParser());
 	
 	app.get('/callback/', function(req, res) {
