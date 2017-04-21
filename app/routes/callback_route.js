@@ -27,8 +27,8 @@ module.exports = function(express, app) {
 		 			access_token: access_token,
 		 			refresh_token: refresh_token
 		 		}
-		 		res.cookie('userDetails' , JSON.stringify(userDetails), {expire : new Date() + expires_in}).send('Cookie is set');
-		 		res.redirect('/initialize');
+		 		res.cookie('userDetails' , JSON.stringify(userDetails), {expire : new Date() + expires_in});//.send('Cookie is set');
+		 		res.redirect('/create');
 		  	});
 		});
 	});
