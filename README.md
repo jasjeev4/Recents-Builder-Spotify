@@ -1,6 +1,6 @@
 # Recents-Builder-Spotify
 
-A simple web app to create a new playlist of the most recently added songs created by a user. 
+A simple web app to create a new playlist of the most recently added songs created by a user. You need Node.js to run this.
 
 ### Setup
 
