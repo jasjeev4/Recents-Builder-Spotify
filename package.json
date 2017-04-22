@@ -1,6 +1,6 @@
 {
-  "name": "Recent playlist builder for Spotify",
-  "version": "0.1.0",
+  "name": "RecentPlaylistSpotify",
+  "version": "0.1.1",
   "description": "Creates a playlist of recently added music for a Spotify user",
   "scripts": {
     "start": "node server.js"
